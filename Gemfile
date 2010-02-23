@@ -22,8 +22,8 @@ gem "haml"
 #   gem "webrat"
 # end
 group :test do
-  # gem "rspec", "2.0.0.a8"
-  gem "rspec", :git => "git://github.com/rspec/rspec.git"
   # gem "rspec-rails", "2.0.0.a9"
+  gem "cucumber-rails", :git => "git://github.com/aslakhellesoy/cucumber-rails.git"
+  gem "rspec", :git => "git://github.com/rspec/rspec.git"
   gem "rspec-rails", :git => "git://github.com/rspec/rspec-rails.git"
 end
