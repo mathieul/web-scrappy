@@ -21,6 +21,11 @@ gem "haml"
 # group :test do
 #   gem "webrat"
 # end
+
+group :development do
+  gem "rails3-generators", :git => "git://github.com/indirect/rails3-generators.git"
+end
+
 group :test do
   # gem "rspec-rails", "2.0.0.a9"
   gem "cucumber-rails", :git => "git://github.com/aslakhellesoy/cucumber-rails.git"
