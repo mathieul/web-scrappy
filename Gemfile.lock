@@ -1,0 +1,153 @@
+--- 
+hash: 99faea58e356506d5d278f744bafaf1c75cb53ae
+sources: 
+- Git: 
+    git: git://github.com/rspec/rspec-rails.git
+    uri: git://github.com/rspec/rspec-rails.git
+    ref: a7afc0d77927f950798723e2cba5840625150967
+- Git: 
+    git: git://github.com/rspec/rspec.git
+    uri: git://github.com/rspec/rspec.git
+    ref: 5c8b2f98b9dd8a5119d457778f52640c3295b38c
+- Git: 
+    git: git://github.com/aslakhellesoy/cucumber-rails.git
+    uri: git://github.com/aslakhellesoy/cucumber-rails.git
+    ref: 07cddc3e2fe2676e554bee96fe886b0446f08250
+- Git: 
+    git: git://github.com/indirect/rails3-generators.git
+    uri: git://github.com/indirect/rails3-generators.git
+    ref: 850f44af893f33ab759cb07f1b6711bf5c052c7f
+- Rubygems: 
+    uri: http://gemcutter.org
+specs: 
+- text-hyphen: 
+    version: 1.0.0
+- json_pure: 
+    version: 1.2.0
+- diff-lcs: 
+    version: 1.1.2
+- term-ansicolor: 
+    version: 1.0.4
+- polyglot: 
+    version: 0.3.0
+- treetop: 
+    version: 1.4.4
+- text-format: 
+    version: 1.0.0
+- mysql: 
+    version: 2.8.1
+- nokogiri: 
+    version: 1.4.1
+- cucumber-rails: 
+    version: 0.2.5
+    source: 2
+- bundler: 
+    version: 0.9.7
+- mime-types: 
+    version: "1.16"
+- abstract: 
+    version: 1.0.0
+- thor: 
+    version: 0.13.3
+- haml: 
+    version: 2.2.20
+- erubis: 
+    version: 2.6.5
+- rack-mount: 
+    version: 0.4.7
+- i18n: 
+    version: 0.3.3
+- rspec-mocks: 
+    version: 2.0.0.a8
+- rspec-expectations: 
+    version: 2.0.0.a8
+- rspec-core: 
+    version: 2.0.0.a8
+- rspec: 
+    version: 2.0.0.a8
+    source: 1
+- thor-ext: 
+    version: 0.1.2
+- rspec-rails: 
+    version: 2.0.0.a9
+    source: 0
+- warden: 
+    version: 0.9.3
+- devise: 
+    version: 1.0.2
+- rails3-generators: 
+    version: 0.4.0
+    source: 3
+- rake: 
+    version: 0.8.7
+- memcache-client: 
+    version: 1.7.8
+- rack: 
+    version: 1.1.0
+- rack-test: 
+    version: 0.5.3
+- webrat: 
+    version: 0.7.0
+- builder: 
+    version: 2.1.2
+- cucumber: 
+    version: 0.6.2
+- tzinfo: 
+    version: 0.3.16
+- activesupport: 
+    version: 3.0.0.beta
+- mail: 
+    version: 2.1.3
+- arel: 
+    version: 0.2.1
+- activemodel: 
+    version: 3.0.0.beta
+- activeresource: 
+    version: 3.0.0.beta
+- actionpack: 
+    version: 3.0.0.beta
+- actionmailer: 
+    version: 3.0.0.beta
+- activerecord: 
+    version: 3.0.0.beta
+- railties: 
+    version: 3.0.0.beta
+- rails: 
+    version: 3.0.0.beta
+dependencies: 
+  rails: 
+    version: = 3.0.0.beta
+    group: 
+    - :default
+  mysql: 
+    version: ">= 0"
+    group: 
+    - :default
+  haml: 
+    version: ">= 0"
+    group: 
+    - :default
+  warden: 
+    version: ~> 0.9.3
+    group: 
+    - :default
+  devise: 
+    version: ~> 1.0.2
+    group: 
+    - :default
+  rails3-generators: 
+    version: ">= 0"
+    group: 
+    - :development
+  cucumber-rails: 
+    version: ">= 0"
+    group: 
+    - :test
+  rspec: 
+    version: ">= 0"
+    group: 
+    - :test
+  rspec-rails: 
+    version: ">= 0"
+    group: 
+    - :test

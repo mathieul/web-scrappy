@@ -9,6 +9,8 @@ gem "rails", "3.0.0.beta"
 
 gem "mysql"
 gem "haml"
+gem "warden", "~> 0.9.3"
+gem "devise", "~> 1.0.2"
 
 ## Bundle the gems you use:
 # gem "bj"
