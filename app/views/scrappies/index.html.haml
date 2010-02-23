@@ -1,0 +1,21 @@
+%h1 Listing scrappies
+
+%table
+  %tr
+    %th Name
+    %th Label
+    %th
+    %th
+    %th
+
+  - @scrappies.each do |scrappy|
+    %tr
+      %td= scrappy.name
+      %td= scrappy.label
+      %td= link_to 'Show', scrappy
+      %td= link_to 'Edit', edit_scrappy_path(scrappy)
+      %td= link_to 'Destroy', scrappy, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New scrappy', new_scrappy_path

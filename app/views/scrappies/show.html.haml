@@ -1,0 +1,10 @@
+%p
+  %b Name:
+  = @scrappy.name
+%p
+  %b Label:
+  = @scrappy.label
+
+= link_to 'Edit', edit_scrappy_path(@scrappy)
+\|
+= link_to 'Back', scrappies_path

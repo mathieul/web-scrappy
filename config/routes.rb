@@ -1,4 +1,6 @@
 WebScrappy::Application.routes.draw do |map|
+  resources :scrappies
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
