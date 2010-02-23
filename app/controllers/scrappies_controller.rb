@@ -1,6 +1,8 @@
 class ScrappiesController < ApplicationController
   respond_to :html, :xml, :json
 
+  before_filter :authenticate_user!
+
   def index
     @scrappies = Scrappy.all
     respond_with(@scrappies)

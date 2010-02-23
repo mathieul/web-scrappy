@@ -1,4 +1,7 @@
 WebScrappy::Application.routes.draw do |map|
+  resources :users, :only => [:edit, :new]
+  devise_for :users, :controllers => {:sessions => "sessions"}
+
   resources :scrappies
 
   # The priority is based upon order of creation:
