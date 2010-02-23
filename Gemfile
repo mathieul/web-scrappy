@@ -11,6 +11,7 @@ gem "mysql"
 gem "haml"
 gem "warden", "0.9.3"
 gem "devise", "1.1.pre2"
+gem "cancan"
 
 ## Bundle the gems you use:
 # gem "bj"

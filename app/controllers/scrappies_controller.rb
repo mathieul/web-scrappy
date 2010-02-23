@@ -2,6 +2,7 @@ class ScrappiesController < ApplicationController
   respond_to :html, :xml, :json
 
   before_filter :authenticate_user!
+  load_and_authorize_resource
 
   def index
     @scrappies = Scrappy.all
@@ -19,7 +20,8 @@ class ScrappiesController < ApplicationController
   end
 
   def create
-    @scrappy = Scrappy.new(params[:scrappy])
+    @scrappy = current_user.scrappies.build(params[:scrappy])
+    # @scrappy = Scrappy.new(params[:scrappy])
     respond_with(@scrappy) do |format|
       if @scrappy.save
         format.html { redirect_to(scrappies_url, :notice => 'A new scrappy was successfully created.') }

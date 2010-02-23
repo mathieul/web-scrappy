@@ -5,5 +5,9 @@
     = csrf_meta_tag
     = stylesheet_link_tag 'scaffold'
   %body
-    %p.notice= notice
+    - flash.each do |key, message|
+      %p{:class => key}= message
+
     = yield
+
+    = javascript_include_tag 'jquery-1.4.2.min', 'rails'

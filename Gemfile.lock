@@ -1,5 +1,5 @@
 --- 
-hash: 8f42140a0c9b528cef2c643c5dd916ce8952441b
+hash: 5e738cdfc9b7e6764d671f456304ba3429158d05
 sources: 
 - Git: 
     git: git://github.com/rspec/rspec-rails.git
@@ -20,55 +20,59 @@ sources:
 - Rubygems: 
     uri: http://gemcutter.org
 specs: 
-- abstract: 
-    version: 1.0.0
 - nokogiri: 
     version: 1.4.1
-- erubis: 
-    version: 2.6.5
+- text-hyphen: 
+    version: 1.0.0
+- text-format: 
+    version: 1.0.0
 - polyglot: 
     version: 0.3.0
-- json_pure: 
-    version: 1.2.0
+- treetop: 
+    version: 1.4.4
 - diff-lcs: 
     version: 1.1.2
 - term-ansicolor: 
     version: 1.0.4
-- treetop: 
-    version: 1.4.4
-- tzinfo: 
-    version: 0.3.16
-- cucumber-rails: 
-    version: 0.2.5
-    source: 2
-- mime-types: 
-    version: "1.16"
+- json_pure: 
+    version: 1.2.0
+- abstract: 
+    version: 1.0.0
 - bundler: 
     version: 0.9.7
-- text-hyphen: 
-    version: 1.0.0
-- memcache-client: 
-    version: 1.7.8
-- rake: 
-    version: 0.8.7
+- mime-types: 
+    version: "1.16"
+- thor: 
+    version: 0.13.3
 - mysql: 
     version: 2.8.1
-- text-format: 
-    version: 1.0.0
+- memcache-client: 
+    version: 1.7.8
 - builder: 
     version: 2.1.2
+- tzinfo: 
+    version: 0.3.16
 - haml: 
     version: 2.2.20
-- i18n: 
-    version: 0.3.3
+- erubis: 
+    version: 2.6.5
 - rack: 
     version: 1.1.0
-- rack-mount: 
-    version: 0.4.7
 - rack-test: 
     version: 0.5.3
 - webrat: 
     version: 0.7.0
+- rake: 
+    version: 0.8.7
+- cucumber-rails: 
+    version: 0.2.5
+    source: 2
+- cancan: 
+    version: 1.0.2
+- i18n: 
+    version: 0.3.3
+- rack-mount: 
+    version: 0.4.7
 - rspec-mocks: 
     version: 2.0.0.a8
 - rspec-expectations: 
@@ -78,26 +82,24 @@ specs:
 - rspec: 
     version: 2.0.0.a8
     source: 1
-- rails3-generators: 
-    version: 0.4.0
-    source: 3
+- rspec-rails: 
+    version: 2.0.0.a9
+    source: 0
 - thor-ext: 
     version: 0.1.2
 - cucumber: 
     version: 0.6.2
+- rails3-generators: 
+    version: 0.4.0
+    source: 3
 - warden: 
     version: 0.9.3
-- rspec-rails: 
-    version: 2.0.0.a9
-    source: 0
-- thor: 
-    version: 0.13.3
 - activesupport: 
     version: 3.0.0.beta
-- arel: 
-    version: 0.2.1
 - mail: 
     version: 2.1.3
+- arel: 
+    version: 0.2.1
 - activemodel: 
     version: 3.0.0.beta
 - actionpack: 
@@ -133,6 +135,10 @@ dependencies:
     - :default
   devise: 
     version: = 1.1.pre2
+    group: 
+    - :default
+  cancan: 
+    version: ">= 0"
     group: 
     - :default
   rails3-generators: 

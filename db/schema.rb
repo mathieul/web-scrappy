@@ -9,14 +9,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100223123044) do
+ActiveRecord::Schema.define(:version => 20100223132027) do
 
   create_table "scrappies", :force => true do |t|
     t.string   "name"
     t.string   "label"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "creator_id"
   end
+
+  add_index "scrappies", ["creator_id"], :name => "index_scrappies_on_creator_id"
 
   create_table "users", :force => true do |t|
     t.string   "email",                              :null => false
